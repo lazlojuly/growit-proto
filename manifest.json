@@ -3,17 +3,17 @@
   "short_name": "GrowIT",
   "icons": [
     {
-      "src": "/lazlojuly/gug/master/assets/gug-icon-1x.png",
+      "src": "gug-icon-1x.png",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "/lazlojuly/gug/master/assets/gug-icon-2x.png",
+      "src": "gug-icon-2x.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "/lazlojuly/gug/master/assets/gug-icon-4x.png",
+      "src": "gug-icon-4x.png",
       "type": "image/png",
       "sizes": "192x192"
     }
