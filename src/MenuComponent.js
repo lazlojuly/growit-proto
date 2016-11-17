@@ -19,19 +19,6 @@ export default class MenuComponent extends React.Component {
   constructor(props) {
     super(props)
     this.state = {open: false}
-
-    this.avatarStyle = {"marginBottom": 15}
-    this.menuStyle = {
-      paper: {
-        display: 'inline-block',
-        float: 'left',
-        margin: '16px 32px 16px 0',
-      },
-      rightIcon: {
-        textAlign: 'center',
-        lineHeight: '24px',
-      },
-    }
   }
 
   handleToggle = () => this.setState({open: !this.state.open})
@@ -44,23 +31,16 @@ export default class MenuComponent extends React.Component {
         <AppBar title="GrowIT" onLeftIconButtonTouchTap={this.handleToggle} />
         <Drawer
           docked={false}
-          width={200}
           open={this.state.open}
           onRequestChange={(open) => this.setState({open})}
         >
 
           <Menu>
-            <MenuItem onTouchTap={this.handleClose}
-              leftAvatar={
-                <Avatar src={profileRich} />
-              }>
-            </MenuItem>
-            <Divider />
-            <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionHome />}>Stock</MenuItem>
-            <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionBuild />}>Jobs</MenuItem>
-            <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionDateRange />}>Plan</MenuItem>
-            <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionTrendingUp />}>Stats</MenuItem>
-            <MenuItem onTouchTap={this.handleClose} leftIcon={<ImageViewComfy />}>Products</MenuItem>
+            <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionHome />} primaryText="Stock" />
+            <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionBuild />} primaryText="Jobs" />
+            <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionDateRange />} primaryText="Plan" />
+            <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionTrendingUp />}  primaryText="Stats" />
+            <MenuItem onTouchTap={this.handleClose} leftIcon={<ImageViewComfy />}   primaryText="Products" />
           </Menu>
         </Drawer>
       </div>
