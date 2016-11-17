@@ -1,3 +1,3 @@
 self.addEventListener('install', function(event) {
-  console.log('ws.js.addEventListener("install")')
+  console.log('ServiceWorker.js.addEventListener("install")')
 });
