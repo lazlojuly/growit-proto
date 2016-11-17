@@ -28,7 +28,7 @@ export default class MenuComponent extends React.Component {
   render() {
     return (
       <div>
-        <AppBar title="GrowIT" onLeftIconButtonTouchTap={this.handleToggle} />
+        <AppBar title="Growing Underground" onLeftIconButtonTouchTap={this.handleToggle} />
         <Drawer
           docked={false}
           open={this.state.open}
