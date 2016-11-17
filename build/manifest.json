@@ -18,7 +18,7 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "https://lazlojuly.github.io/growit-proto/build/",
+  "start_url": "%PUBLIC_URL%",
   "display": "standalone",
   "background_color": "#212121",
   "theme_color": "#212121"
