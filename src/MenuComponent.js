@@ -19,6 +19,7 @@ export default class MenuComponent extends React.Component {
   constructor(props) {
     super(props)
     this.state = {open: false}
+    this.drawerStyle = {width: "auto", backgroundColor:"red"}
   }
 
   handleToggle = () => this.setState({open: !this.state.open})
@@ -32,16 +33,20 @@ export default class MenuComponent extends React.Component {
         <Drawer
           docked={false}
           open={this.state.open}
+          containerStyle={{ width: 'auto' }}
           onRequestChange={(open) => this.setState({open})}
         >
-
-          <Menu>
-            <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionHome />} primaryText="Stock" />
-            <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionBuild />} primaryText="Jobs" />
-            <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionDateRange />} primaryText="Plan" />
-            <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionTrendingUp />}  primaryText="Stats" />
-            <MenuItem onTouchTap={this.handleClose} leftIcon={<ImageViewComfy />}   primaryText="Products" />
-          </Menu>
+        <Menu>
+          <MenuItem onTouchTap={this.handleClose}
+            leftIcon={<Avatar src={profileRich} />}>
+          </MenuItem>
+          <Divider />
+          <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionHome />} primaryText="Stock" />
+          <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionBuild />} primaryText="Jobs" />
+          <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionDateRange />} primaryText="Plan" />
+          <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionTrendingUp />}  primaryText="Stats" />
+          <MenuItem onTouchTap={this.handleClose} leftIcon={<ImageViewComfy />}   primaryText="Products" />
+        </Menu>
         </Drawer>
       </div>
     )
