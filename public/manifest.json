@@ -1,5 +1,5 @@
 {
-  "name": "Growing Underground",
+  "name": "Growing Underground powered by GrowIT",
   "short_name": "GrowIT",
   "icons": [
     {
@@ -20,6 +20,6 @@
   ],
   "start_url": "https://lazlojuly.github.io/growit-proto/build/",
   "display": "standalone",
-  "background_color": "#212121",
-  "theme_color": "#212121"
+  "background_color": "#000",
+  "theme_color": "#000"
 }

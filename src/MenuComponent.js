@@ -19,7 +19,6 @@ export default class MenuComponent extends React.Component {
   constructor(props) {
     super(props)
     this.state = {open: false}
-    this.drawerStyle = {width: "auto", backgroundColor:"red"}
   }
 
   handleToggle = () => this.setState({open: !this.state.open})
