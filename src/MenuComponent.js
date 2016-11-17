@@ -38,7 +38,7 @@ export default class MenuComponent extends React.Component {
         >
         <Menu>
           <MenuItem onTouchTap={this.handleClose}
-            leftIcon={<Avatar src={profileRich} />}>
+            leftAvatar={<Avatar src={profileRich} />}>
           </MenuItem>
           <Divider />
           <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionHome />} primaryText="Stock" />
