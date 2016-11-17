@@ -37,15 +37,14 @@ export default class MenuComponent extends React.Component {
           onRequestChange={(open) => this.setState({open})}
         >
         <Menu>
-          <MenuItem onTouchTap={this.handleClose}
-            leftAvatar={<Avatar src={profileRich} />}>
+          <MenuItem onTouchTap={this.handleClose} leftAvatar={<Avatar src={profileRich} />}>
           </MenuItem>
           <Divider />
-          <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionHome />} primaryText="Stock" />
-          <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionBuild />} primaryText="Jobs" />
-          <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionDateRange />} primaryText="Plan" />
-          <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionTrendingUp />}  primaryText="Stats" />
-          <MenuItem onTouchTap={this.handleClose} leftIcon={<ImageViewComfy />}   primaryText="Products" />
+          <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionHome />} primaryText="Stock Control" />
+          <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionBuild />} primaryText="Jobs " />
+          <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionDateRange />} primaryText="Planner " />
+          <MenuItem onTouchTap={this.handleClose} leftIcon={<ActionTrendingUp />}  primaryText="Statistics " />
+          <MenuItem onTouchTap={this.handleClose} leftIcon={<ImageViewComfy />}   primaryText="Products " />
         </Menu>
         </Drawer>
       </div>
