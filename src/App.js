@@ -13,9 +13,9 @@ const muiTheme = getMuiTheme({
   },
 })
 
-const App = () => (
+const App = props => (
   <MuiThemeProvider muiTheme={muiTheme}>
-    <MenuComponent />
+    <MenuComponent store={props.store}  />
   </MuiThemeProvider>
 )
 
